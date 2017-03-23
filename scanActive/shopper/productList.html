@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/common.css"/>
+		<title>商家优惠</title>
+	</head>
+	<body style="background: #eff5f6;">
+		<div class="couponsWrap">
+			<ul class="clearfix">
+				<li class="moneyCou clearfix">
+					<i class="borderIcon"></i>
+					<i class="ballt"></i>
+					<i class="ballb"></i>
+					<div class="couponPic">
+						<i class="qc"></i>
+						<i class="balll"></i>
+						￥<span class="digit">10</span><br>
+						<span>代金券</span>
+					</div>
+					<div class="infoDetail">
+						<div class="couImgDiv">
+							<img src="../assets/images/6.png">
+						</div>
+						<div class="table">
+							<div class="infoWrap clearfix">
+								<div class="productName">
+									炭烧浓香咖啡
+								</div>
+								<div class="priceInfo">
+									<span class="yen">￥</span>
+									<span class="currPrice">25.00 </span>
+									<span class="origiPrice">30.00</span>
+								</div>
+							</div>
+						</div>
+						<div class="useDate">
+							使用期限：2017.3.15 - 2017.4.15
+						</div>
+					</div>
+				</li>
+				<li class="saleCou clearfix">
+					<i class="borderIcon"></i>
+					<i class="ballt"></i>
+					<i class="ballb"></i>
+					<div class="couponPic">
+						<i class="single"></i>
+						<i class="balll"></i>
+						<span class="digit">8</span>折<br />
+						<span>折扣券</span>
+					</div>
+					<div class="infoDetail">
+						<div class="couImgDiv">
+							
+						</div>
+						<div class="table">
+							<div class="infoWrap clearfix">
+								<div class="productName">
+									炭烧浓香咖啡
+								</div>
+								<!--<div class="priceInfo">
+									<span class="yen">￥</span>
+									<span class="currPrice">25.00 </span>
+									<span class="origiPrice">30.00</span>
+								</div>-->
+							</div>
+						</div>
+						<div class="useDate">
+							使用期限：2017.3.15 - 2017.4.15
+						</div>
+					</div>
+				</li>
+				<li class="moneyCou clearfix">
+					<i class="borderIcon"></i>
+					<i class="ballt"></i>
+					<i class="ballb"></i>
+					<div class="couponPic">
+						<i class="qc"></i>
+						<i class="balll"></i>
+						￥<span class="digit">10</span><br>
+						<span>代金券</span>
+					</div>
+					<div class="infoDetail">
+						<div class="couImgDiv">
+							<img src="../assets/images/6.png">
+						</div>
+						<div class="table">
+							<div class="infoWrap clearfix">
+								<div class="productName">
+									炭烧浓香咖啡
+								</div>
+								<div class="priceInfo">
+									<span class="yen">￥</span>
+									<span class="currPrice">25.00 </span>
+									<span class="origiPrice">30.00</span>
+								</div>
+							</div>
+						</div>
+						<div class="useDate">
+							使用期限：2017.3.15 - 2017.4.15
+						</div>
+					</div>
+				</li>
+				<li class="saleCou clearfix">
+					<i class="borderIcon"></i>
+					<i class="ballt"></i>
+					<i class="ballb"></i>
+					<div class="couponPic">
+						<i class="balll"></i>
+						<span class="digit">8</span>折<br />
+						<span>折扣券</span>
+					</div>
+					<div class="infoDetail">
+						<div class="couImgDiv">
+							
+						</div>
+						<div class="table">
+							<div class="infoWrap clearfix">
+								<div class="productName">
+									炭烧浓香咖啡
+								</div>
+								<!--<div class="priceInfo">
+									<span class="yen">￥</span>
+									<span class="currPrice">25.00 </span>
+									<span class="origiPrice">30.00</span>
+								</div>-->
+							</div>
+						</div>
+						<div class="useDate">
+							使用期限：2017.3.15 - 2017.4.15
+						</div>
+					</div>
+				</li>
+				<li class="saleCou clearfix">
+					<i class="borderIcon"></i>
+					<i class="ballt"></i>
+					<i class="ballb"></i>
+					<div class="couponPic">
+						<i class="single"></i>
+						<i class="balll"></i>
+						<span class="digit">8</span>折<br />
+						<span>折扣券</span>
+					</div>
+					<div class="infoDetail">
+						<div class="couImgDiv">
+							
+						</div>
+						<div class="table">
+							<div class="infoWrap clearfix">
+								<div class="productName">
+									炭烧浓香咖啡
+								</div>
+								<!--<div class="priceInfo">
+									<span class="yen">￥</span>
+									<span class="currPrice">25.00 </span>
+									<span class="origiPrice">30.00</span>
+								</div>-->
+							</div>
+						</div>
+						<div class="useDate">
+							使用期限：2017.3.15 - 2017.4.15
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="comBtn">
+				确定
+			</div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="../assets/js/common.js" type="text/javascript" charset="utf-8"></script>
+		<script>
+			$('.couponsWrap ul li').on('touchstart',function(){
+				toggleActive.apply(this);
+			});
+			$('.comBtn').on('touchstart',function(){
+				window.location = 'payBind.html';
+			});
+		</script>
+	</body>
+</html>
