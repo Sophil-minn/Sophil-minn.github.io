@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta name="format-detection" content="telephone=no"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="../assets/css/common.css"/>
+		<title>门店二维码绑定</title>
+	</head>
+	<body>
+		<div class="shopBindWrap">
+			<div class="title">
+				请选择需要开通的门店服务
+			</div>
+			<ul> 
+				<li class="creditItem">
+					<div class="itemDiv">
+						<div class="itemTitle">
+							信用借还
+						</div>
+						<div class="itemDesc">
+							开启后为顾客提供物品借用
+						</div>
+					</div>
+					<div class="check">
+						
+					</div>
+				</li>
+				<li class="couponItem">
+					<div class="itemDiv">
+						<div class="itemTitle">
+							优惠券
+						</div>
+						<div class="itemDesc">
+							顾客扫码即可领取优惠券
+						</div>
+					</div>
+					<div class="check checked">
+						
+					</div>
+				</li>
+				<li class="queueItem">
+					<div class="itemDiv">
+						<div class="itemTitle">
+							排队取号
+						</div>
+						<div class="itemDesc">
+							顾客扫码即可领取排号
+						</div>
+					</div>
+					<div class="check">
+						
+					</div>
+				</li>
+				<li class="orderItem disable">
+					<div class="itemDiv">
+						<div class="itemTitle">
+							扫码点餐（未开启该服务）
+						</div>
+						<div class="itemDesc">
+							顾客扫码即可下单
+						</div>
+					</div>
+					<div class="check">
+						
+					</div>
+				</li>
+			</ul>
+			<div class="confirm comBtn">
+				确认
+			</div>
+		</div>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script>
+			$('.check').on('touchstart',function(){
+				var flag = $(this).hasClass('checked');
+				if(!flag){
+					$(this).addClass('checked');
+				}else{
+					$(this).removeClass('checked');
+				}
+			});
+			$('.disable .check').unbind();
+			$('.confirm').on('touchstart',function(){
+				window.location='shopBindStatus.html';
+			});
+		</script>
+	</body>
+</html>
