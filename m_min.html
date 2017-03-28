@@ -57,12 +57,17 @@
 		       	</div>
 		    </header>
 	    	<ul>
-		    	<li>选项卡切换</li>
+		    	<li class="cardTab" id="cardTab">选项卡切换</li>
 		    	<li>信用借还</li>
 		    	<li>优惠券列表页面</li>
 		    	<li>其他</li>
 		    </ul>
 	    </div>
-	    
+	    <script src="assets/js/jquery.min.js" charset="utf-8"></script>
+	    <script>
+		    $('#cardTab').on('touchstart',function(){
+		    	window.location='minn/cardTab/demo.html';
+		    });
+	    </script>
 	</body>
 </html>
