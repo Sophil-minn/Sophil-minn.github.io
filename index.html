@@ -1,225 +1,44 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>Minn's page</title>
-<style type="text/css">
-body {
-    background: #000;
-}
-#load {
-    position: absolute;
-    width: 600px;
-    height: 36px;
-    left: 50%;
-    top: 40%;
-    margin-left: -300px;
-    overflow: visible;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    cursor: default;
-    color:#fff;
-    text-align: center;
-    font-size: 36px;
-    line-height: 72px;
-}
-#load div {
-    position: absolute;
-    width: 20px;
-    height: 36px;
-    opacity: 0;
-    font-family: Helvetica, Arial, sans-serif;
-    animation: move 2s linear infinite;
-    -o-animation: move 2s linear infinite;
-    -moz-animation: move 2s linear infinite;
-    -webkit-animation: move 2s linear infinite;
-    transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    -moz-transform: rotate(180deg);
-    -webkit-transform: rotate(180deg);
-    color: #35C4F0;
-    font-size: 36px;
-}
-#load div:nth-child(2) {
-  animation-delay:0.2s;
-  -o-animation-delay:0.2s;
-  -moz-animation-delay:0.2s;
-  -webkit-animation-delay:0.2s;
-}
-#load div:nth-child(3) {
-  animation-delay:0.4s;
-  -o-animation-delay:0.4s;
-  -webkit-animation-delay:0.4s;
-  -webkit-animation-delay:0.4s;
-}
-#load div:nth-child(4) {
-  animation-delay:0.6s;
-  -o-animation-delay:0.6s;
-  -moz-animation-delay:0.6s;
-  -webkit-animation-delay:0.6s;
-}
-#load div:nth-child(5) {
-  animation-delay:0.8s;
-  -o-animation-delay:0.8s;
-  -moz-animation-delay:0.8s;
-  -webkit-animation-delay:0.8s;
-}
-#load div:nth-child(6) {
-  animation-delay:1s;
-  -o-animation-delay:1s;
-  -moz-animation-delay:1s;
-  -webkit-animation-delay:1s;
-}
-#load div:nth-child(7) {
-  animation-delay:1.2s;
-  -o-animation-delay:1.2s;
-  -moz-animation-delay:1.2s;
-  -webkit-animation-delay:1.2s;
-}
-
-@keyframes move {
-  0% {
-    left:0;
-    opacity:0;
-  }
-	35% {
-		left: 41%; 
-		-moz-transform:rotate(0deg);
-		-webkit-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
-		transform:rotate(0deg);
-		opacity:1;
-	}
-	65% {
-		left:59%; 
-		-moz-transform:rotate(0deg); 
-		-webkit-transform:rotate(0deg); 
-		-o-transform:rotate(0deg);
-		transform:rotate(0deg); 
-		opacity:1;
-	}
-	100% {
-		left:100%; 
-		-moz-transform:rotate(-180deg); 
-		-webkit-transform:rotate(-180deg); 
-		-o-transform:rotate(-180deg); 
-		transform:rotate(-180deg);
-		opacity:0;
-	}
-}
-
-@-moz-keyframes move {
-	0% {
-    left:0;
-    opacity:0;
-  }
-	35% {
-		left: 41%; 
-		-moz-transform:rotate(0deg);
-		-webkit-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
-		transform:rotate(0deg);
-		opacity:1;
-	}
-	65% {
-		left:59%; 
-		-moz-transform:rotate(0deg); 
-		-webkit-transform:rotate(0deg); 
-		-o-transform:rotate(0deg);
-		transform:rotate(0deg); 
-		opacity:1;
-	}
-	100% {
-		left:100%; 
-		-moz-transform:rotate(-180deg); 
-		-webkit-transform:rotate(-180deg); 
-		-o-transform:rotate(-180deg); 
-		transform:rotate(-180deg);
-		opacity:0;
-	}
-}
-
-@-webkit-keyframes move {
-	0% {
-    left:0;
-    opacity:0;
-  }
-	35% {
-		left: 41%; 
-		-moz-transform:rotate(0deg);
-		-webkit-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
-		transform:rotate(0deg);
-		opacity:1;
-	}
-	65% {
-		left:59%; 
-		-moz-transform:rotate(0deg); 
-		-webkit-transform:rotate(0deg); 
-		-o-transform:rotate(0deg);
-		transform:rotate(0deg); 
-		opacity:1;
-	}
-	100% {
-		left:100%; 
-		-moz-transform:rotate(-180deg); 
-		-webkit-transform:rotate(-180deg); 
-		-o-transform:rotate(-180deg); 
-		transform:rotate(-180deg);
-		opacity:0;
-	}
-}
-
-@-o-keyframes move {
-	0% {
-    left:0;
-    opacity:0;
-  }
-	35% {
-		left: 41%; 
-		-moz-transform:rotate(0deg);
-		-webkit-transform:rotate(0deg);
-		-o-transform:rotate(0deg);
-		transform:rotate(0deg);
-		opacity:1;
-	}
-	65% {
-		left:59%; 
-		-moz-transform:rotate(0deg); 
-		-webkit-transform:rotate(0deg); 
-		-o-transform:rotate(0deg);
-		transform:rotate(0deg); 
-		opacity:1;
-	}
-	100% {
-		left:100%; 
-		-moz-transform:rotate(-180deg); 
-		-webkit-transform:rotate(-180deg); 
-		-o-transform:rotate(-180deg); 
-		transform:rotate(-180deg);
-		opacity:0;
-	}
-}
-</style>
+		<meta charset="UTF-8">
+		<meta name="author" content="Minn">
+		<link rel="stylesheet" href="assets/css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/minn.css"/>
+		<title>minn</title>
 	</head>
 	<body>
-		<div id="load">
-		  <div>G</div>
-		  <div>N</div>
-		  <div>I</div>
-		  <div>D</div>
-		  <div>A</div>
-		  <div>O</div>
-		  <div>L</div>
+		<header>
+	       	<div class="header">
+	       		<h1>我的项目</h1>
+	       		<span class="avatar"><img title="Minn" src="assets/img/9.jpg"/></span>
+	       	</div>
+	    </header>
+	    <div class="projectList">
+	    	<ul>
+		    	<li>选项卡切换</li>
+		    	<li>信用借还</li>
+		    	<li>优惠券列表页面</li>
+		    	<li>其他</li>
+		    </ul>
+	    </div>
+	    <div class="BBQ">
+			<div class="meat"></div>
+			<div class="sausage"></div>
+			<div class="corn"></div>
+			<div class="waterbamboo"></div>
+			<div class="shrimp"></div>
+			<div class="clams"></div>
+			<div class="greenpepper"></div>
+			<div class="smoke"></div>
 		</div>
-		<script>
-			setTimeout('loaded()',2000);
-			function loaded(){
-				document.getElementById('load').innerHTML = "Welcome to My world!!! <br>HuiMin Yang   2017";
-			}
-			var system ={};  
+	    <footer>
+	    	<div class="text">
+	    		Personal project
+	    	</div>
+	    </footer>
+	    <script>
+	    	var system ={};  
 		    var p = navigator.platform;       
 		    system.win = p.indexOf("Win") == 0;  
 		    system.mac = p.indexOf("Mac") == 0;  
@@ -229,6 +48,6 @@ body {
 		    }else{  //如果是手机,跳转到谷歌
 		        window.location.href="m_index.html";  
 		    }
-		</script>
+	    </script>
 	</body>
 </html>
