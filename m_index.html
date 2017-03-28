@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 		<title>Minn's page</title>
 <style type="text/css">
 body {
@@ -9,11 +10,9 @@ body {
 }
 #load {
     position: absolute;
-    width: 600px;
-    height: 36px;
-    left: 50%;
+    width: 100%;
+    height: 1.5rem;
     top: 40%;
-    margin-left: -300px;
     overflow: visible;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -22,8 +21,8 @@ body {
     cursor: default;
     color:#fff;
     text-align: center;
-    font-size: 36px;
-    line-height: 72px;
+    font-size: 1.5rem;
+    line-height: 3rem;
 }
 #load div {
     position: absolute;
@@ -219,16 +218,7 @@ body {
 			function loaded(){
 				document.getElementById('load').innerHTML = "Welcome to My world!!! <br>Minn  2017";
 			}
-			var system ={};  
-		    var p = navigator.platform;       
-		    system.win = p.indexOf("Win") == 0;  
-		    system.mac = p.indexOf("Mac") == 0;  
-		    system.x11 = (p == "X11") || (p.indexOf("Linux") == 0);     
-		    if(system.win||system.mac||system.xll){//如果是电脑跳转到百度  
-		        //window.location.href="http://www.baidu.com/";  
-		    }else{  //如果是手机,跳转到谷歌
-		        window.location.href="m_index.html";  
-		    }
+			
 		</script>
 	</body>
 </html>
