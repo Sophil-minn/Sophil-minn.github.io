@@ -10,13 +10,13 @@
 	<body>
 		<header>
 	       	<div class="header">
-	       		<h1>我的项目</h1>
+	       		<h1>我的H5项目</h1>
 	       		<span class="avatar"><img title="Minn" src="assets/img/9.jpg"/></span>
 	       	</div>
 	    </header>
 	    <div class="projectList">
 	    	<ul>
-		    	<li>选项卡切换</li>
+		    	<li class="cardTab" id="cardTab">选项卡切换</li>
 		    	<li>信用借还</li>
 		    	<li>优惠券列表页面</li>
 		    	<li>其他</li>
@@ -37,6 +37,7 @@
 	    		Personal project
 	    	</div>
 	    </footer>
+	    <script src="assets/js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
 	    <script>
 	    	var system ={};  
 		    var p = navigator.platform;       
@@ -48,6 +49,9 @@
 		    }else{  //如果是手机,跳转到谷歌
 		        window.location.href="m_min.html";  
 		    }
+		    $('#cardTab').on('click',function(){
+		    	window.location='minn/cardTab/demo.html';
+		    });
 	    </script>
 	</body>
 </html>
